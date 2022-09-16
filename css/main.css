@@ -19,8 +19,10 @@ li {
 }
 
 body {
-    color: #333;
+    color: #7DBB2C;
     line-height: 1;
+    background-color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /* common(공통선택자) */
 
@@ -46,7 +48,10 @@ section .title p {
 
 /* header */
 
-header {}
+header {
+    color: #7DBB2C;
+    background-color: #000;
+}
 header .inner {
     height: 100px;
     display: flex;
@@ -110,7 +115,7 @@ header .inner nav ul li a {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: rgb(0, 0, 0);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -219,7 +224,8 @@ header .inner nav ul li a {
     height: 40px;
     line-height: 40px;
     border-radius: 40px;
-    background-color: #ccc;
+    background-color: #7DBB2C;
+    color: #000;
     
     
 }
@@ -266,7 +272,7 @@ header .inner nav ul li a {
     /* width: calc(100% - 300px);
     margin: 200px auto; */
 
-    background-color: #eee;
+    background-color: rgb(0, 0, 0);
     padding: 200px 0;
 }
 
@@ -332,7 +338,7 @@ header .inner nav ul li a {
     height: 45%;
     left: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     padding: 50px;
     word-break: keep-all;
    
@@ -373,12 +379,13 @@ header .inner nav ul li a {
     display: block;
     line-height: 45px;
     font-size: 14px;
+    color: #000;
 }
 
 /* cont04 */
 
 .cont04 {
-    background-color: rgb(241, 179, 7);
+    background-color: rgb(0, 0, 0);
     padding: 200px 0;
 }
 .cont04 .inner {}
@@ -399,14 +406,33 @@ header .inner nav ul li a {
 }
 .cont04 .inner .list a {
     width: 19%;
+    
+    
+    
 }
-.cont04 .inner .list a img {
+
+.cont04 .inner .list a > div {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+
+.cont04 .inner .list a  > div img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     display: block;
+    transition: 0.5s;
+    
 
 }
+
+.cont04 .inner .list a:hover > div img {
+    transform: scale(1.2);
+}
+
 
 .cont04 .inner .list a .info {
     height: 70px;
@@ -414,6 +440,7 @@ header .inner nav ul li a {
     line-height: 1.4;
     padding-top: 10px;
     padding-left: 5px;
+    color: #333;
 }
 .cont04 .inner .list a img .info h4 {
     
@@ -450,6 +477,7 @@ header .inner nav ul li a {
     width: 400px;
     height: 500px;
     object-fit: cover;
+    display: block;
 } 
 
 .cont05 .info .text {
@@ -495,13 +523,14 @@ header .inner nav ul li a {
     border-radius: 40px;
     margin: 5px 10px;
     font-size: 16px;
+    color: #333;
 }
 
 .cont05 .info .text .list li.v {
     height: 50px;
     line-height: 50px;
     padding: 0 30px;
-    background-color: rgba(0, 110, 255, 0.76);
+    background-color: rgba(0, 110, 255, 0.761);
     color: #fff;
     border-radius: 40px;
     margin: 5px 10px;
