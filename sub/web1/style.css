@@ -27,7 +27,7 @@ a {
 
 /**************** header  ***************/
 header {
-    width: 100vw;
+    width: 100%;
     height: 150px;
     background-color: #000;
     
@@ -122,6 +122,7 @@ header .depth01 ul li {
  .cont02 {
     width: 100%;
     height: 550px;
+    margin: 0 auto;
     
     
 
@@ -141,10 +142,15 @@ header .depth01 ul li {
   font-family: 'Eulyoo1945-SemiBold';
   font-size: 70px;
   color: #000;
+  
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+   transition-duration:1s !important;
+}
 
- }
+ 
  .cont02 div img { 
-   transition: 0.5;
+   
  }
 
  /********** .cont03 ***************/
@@ -152,7 +158,8 @@ header .depth01 ul li {
  .cont03 {
     width: 1440px;
     height: 780px;
-    margin: 280px 330px;
+    margin: 280px auto;
+    margin-left: 300px;
  }
  .cont03 .list {
     width: 1250px;
@@ -309,22 +316,68 @@ header .depth01 ul li {
 
 
  .cont04 .list .small {
-    width: 740px;
-    height: 723px;
+    width: 750px;
+    height: 740px;
+    display: block;
     display: flex;
-    flex-wrap: wrap;
+
+    
  }
- .cont04 .list .small div {}
+ .cont04 .list .small .btn div {
+   width: 342px;
+   height: 344px;
+   
+ }
+
+
+ .cont04 .list .small .btn {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+ }
  
- .cont04 .list .small div a img{
+ .cont04 .list .small .btn a img {
     width: 342px;
     height: 349px;
+    box-shadow: 5px 5px 8px #333;
+    
  }
  .cont04 .list .small div p {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 22px;
+    margin-top: 9px;
+    
  }
  .cont04 .list .small div strong {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 50px;
+ }
+
+
+ /* ************.footer************ */
+
+
+ footer {
+   width: 100%;
+   height: 236px;
+   background-color: rgb(0, 0, 0);
+   margin: 0 auto;
+   margin-top: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+
+ 
+
+ footer  p {
+   font-family: 'Noto Sans KR';
+   color: #fff;
+   line-height: 1.3;
+ }
+
+ footer img {
+   width: 258px;
+   height: 78px;
  }
