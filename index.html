@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- fancybox3 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- xeicon css -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- cursor css -->
+    
+
 
     
     <link href="css/font/font.css" rel="stylesheet"/>
@@ -20,7 +27,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- fnacybox3 js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- aos js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquaeryui js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
     <script>
         $(function(){
             //영상편집 슬라이드
@@ -44,6 +56,19 @@
                 $('.mySwiper').removeClass('on');
                 $('.mySwiper').eq($(this).index()).addClass('on');
             });
+
+            $('header .inner nav ul li a').click(function(e){
+                e.preventDefault();//a링크 방지
+            });
+
+            //해당 페이지로 이동
+            $('header .inner nav ul li').click(function(){
+                var page = $('section').eq($(this).index());
+                var pageTop = page.offset().top;
+                $('html, body').animate({
+                    scrollTop : pageTop
+                }, 1000,);
+            });
         
         });//jquery end
 
@@ -53,7 +78,7 @@
 
     
 </head>
-<body>
+<body>   
     <header>
         <div class="inner">
             <h1>
@@ -61,28 +86,30 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#">영상편집</a></li>
-                    <li><a href="#">웹디자인/웹퍼블리싱</a></li>
-                    <li><a href="#">2D디자인</a></li>
-                    <li><a href="#">나의소개</a></li>
+                    <li><a href="">Video editing</a></li>
+                    <li><a href="">Web Design/Web Publishing</a></li>
+                    <li><a href="">2D, 3D Design</a></li>
+                    <li><a href="">Information</a></li>
                 </ul>
             </nav>
         </div><!-- .inner end -->    
     </header>
 
-    <section class="main_visual">
-        <img src="img/cont03_1.jpg" alt="" />
+    <div class="main_visual" >
+        <video loop muted autoplay>
+            <source src="img/main.mp4" type="video/mp4"/>
+        </video>
         <div class="inner">
             <p>motion graphic desinger</p>
             <h2>Im Jae Kwan</h2>
         </div><!-- .inner end -->
 
-    </section><!-- .main_visual end -->
+    </div><!-- .main_visual end -->
 
-    <section class="cont01">
+    <section class="cont01" id="c1">
         <div class="inner">
             <div class="title">
-                <h3>영상편집</h3>
+                <h3>Video editing</h3>
                 <p>Premiere Pro, After Effects등을 사용하여 모션그래픽을 제작</p>
             </div><!-- .title end -->
             <div class="motion_menu">
@@ -90,8 +117,7 @@
                     <li class="on">게임</li>
                     <li>홍보영상</li>
                     <li>인포그래픽</li>
-                    <li>브이로그</li>
-                    <li>뮤비티저</li>
+                    
                 </ul>
             </div><!-- .motion_menu end -->
 
@@ -308,9 +334,9 @@
         </div><!-- .inner end -->
     </section><!-- .cont01 end -->
 
-    <section class="cont03">
+    <section class="cont03" id="c2">
         <div class="title inner"><!-- inner 를 넣음으로서 정해진 widths 값이 있기때문에 중앙으로 이동 -->
-            <h3>웹 디자인</h3>
+            <h3>Web Design</h3>
             <p>접근성,호환성을 고려한 웹사이트 리뉴얼</p>
         </div><!-- .title end -->
         <div class="list inner">
@@ -355,33 +381,33 @@
 
     </section><!-- .cont03 end -->
 
-    <section class="cont04">
+    <section class="cont04" id="c3">
         <div class="inner">
             <div class="title">
-                <h3>그래픽디자인</h3>
+                <h3>2D, 3D Design</h3>
                 <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 활용항여 디자인을 제작하였습니다.</p>
             </div><!-- .title -->
 
             <div class="list">
-                <a href="img/cont03_2.jpg" data-fancybox="images">
+                <a href="img/그림자 합성.png" data-fancybox="images">
                     <!-- a태그 경로를 이미지 폴더의 이미파일로 건다 -->
                     <div>
-                        <img src="img/cont03_2.jpg" alt=""/>
+                        <img src="img/그림자 합성.png" alt=""/>
                     </div>
                     <div class="info">
-                        <h4>그래픽디자인 제목</h4>
-                        <p>사용한 프로그램</p>
+                        <h4>그림자 인물 합성</h4>
+                        <p>Adobe Photoshop</p>
                     </div><!-- .info end -->
                 </a><!-- 1 -->
                 
-                <a href="img/cont03_1.jpg" data-fancybox="images">
+                <a href="img/라푼젤-4.png" data-fancybox="images">
                     <!-- a태그 경로를 이미지 폴더의 이미파일로 건다 -->
                     <div>
-                        <img src="img/cont03_1.jpg" alt=""/>
+                        <img src="img/라푼젤-4.png" alt=""/>
                     </div>    
                     <div class="info">
-                        <h4>그래픽디자인 제목</h4>
-                        <p>사용한 프로그램</p>
+                        <h4>라푼젤</h4>
+                        <p>Adobe Illustrator</p>
                     </div><!-- .info end -->
                 </a><!-- 2 -->
                 
@@ -421,10 +447,10 @@
         </div><!-- .inner end -->
     </section><!-- .cont04 end -->
 
-    <section class="cont05">
+    <section class="cont05" id="c4">
         <div class="inner">
             <div class="title">
-                <h3>자기소개</h3>
+                <h3>Information</h3>
                 <p>지금 까지 달려온 자신을 소개합니다.</p>
             </div><!-- .title -->
             <div class="info">
@@ -436,7 +462,7 @@
                     </ul>
                     <ul>
                         <li><strong>연락처</strong></li>
-                        <li>010.1111.1111</li>
+                        <li>010.4584.5128</li>
                     </ul>
                     <ul>
                         <li><strong>생년월일</strong></li>
@@ -481,5 +507,10 @@
         </p>
 
     </footer>
+   
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
