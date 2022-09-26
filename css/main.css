@@ -22,8 +22,8 @@ body {
     color: #7DBB2C;
     line-height: 1;
     background-color: #000;
-    font-family: 'Noto Sans KR', sans-serif;
-    
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Galmuri11';
     cursor: url('../img/Cursor-Arrow-PNG-File.png'), auto
 }
 
@@ -49,13 +49,15 @@ section .title {
 }
 
 section .title h3 {
+    color: #fff;
     font-size: 50px;
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-bottom: 10px;
+    font-family: 'Galmuri11';
+    margin-bottom: 20px;
     
 }
 
 section .title p {
+    color: #fff;
     font-style: 20px;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -96,10 +98,11 @@ header .inner nav ul {
 }
 header .inner nav ul li {
     transition: 0.5s;
+    
 }
 
 header .inner nav ul li:hover {
-    text-shadow: 0 0 7px #7DBB2C;
+    text-shadow: 0 0 8px #7DBB2C;
     
 }
 
@@ -126,10 +129,12 @@ header .inner nav ul li a {
     transform: translate(-50%,-50%);
 }
 .main_visual .inner h2 {
-     
+    font-family: 'Galmuri11';
+    font-weight: 700;
     font-size: 70px;
 }
 .main_visual .inner p {
+    font-family: 'Galmuri11';
     font-size: 25px;
     color: rgba(255, 255, 255, 0.527);
     margin-bottom: 10px;
@@ -208,6 +213,7 @@ header .inner nav ul li a {
 
 .cont01 .mySwiper .item {
     display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
     justify-content: space-between;
     
 }
@@ -219,6 +225,7 @@ header .inner nav ul li a {
     text-align: left;
     width: 45%;
     padding-left: 50px;
+    color: #fff;
 }
 .cont01 .mySwiper .item .info h4 {
     font-size: 34px;
@@ -229,6 +236,7 @@ header .inner nav ul li a {
 }
 .cont01 .mySwiper .item .info p {
     font-size: 20px;
+    
     border-top: 1px #ccc solid;
     margin-top: 20px;
     padding-top: 20px;
@@ -240,6 +248,7 @@ header .inner nav ul li a {
 }
 .cont01 .mySwiper .item .info .text li {
     line-height: 1.6;
+    
 } 
 .cont01 .mySwiper .item .info .text li strong{} 
 
@@ -259,6 +268,7 @@ header .inner nav ul li a {
 }
 .cont01 .mySwiper .item .info .btn li a {
     padding: 0 25px;
+    font-family: 'Galmuri11';
 
     
 }
@@ -306,7 +316,7 @@ header .inner nav ul li a {
     /* background-color: rgb(0, 0, 0); */
     background: rgb(15,155,15);
 background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
-    padding: 200px 0;
+    padding: 300px 0;
 }
 
 .cont03 .list {
@@ -319,7 +329,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
 
 .cont03 .list .item {
     width: 50%;
-    height: 100%;
+    height: 120%;
     position: relative;
     overflow: hidden;
     margin: 0 20px;
@@ -371,7 +381,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
     transition: 0.5s;
     position: absolute;
     width: 100%;
-    height: 45%;
+    height: 40%;
     left: 0;
     bottom: 0;
     background-color: rgb(0, 0, 0);
@@ -397,17 +407,20 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
 
 .cont03 .list .item .info .text li {
     margin: 5px 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .cont03 .list .item .info .btn {
     display: flex;
     margin-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .cont03 .list .item .info .btn li {
     margin-right: 10px;
     border-radius: 40px;
     background-color: #eee;
+    font-family: 'Galmuri11';
     
 }
 
@@ -425,6 +438,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
 .cont04 {
     background-color: rgb(0, 0, 0);
     padding: 200px 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .cont04 .inner {}
 .cont04 .inner .title {
@@ -432,7 +446,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
 }
 
 .cont04 .inner .title h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .cont04 .inner .title p {}
 
@@ -479,6 +493,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
     padding-top: 10px;
     padding-left: 5px;
     color: #333;
+    
 }
 .cont04 .inner .list a img .info h4 {
     
@@ -500,6 +515,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
 .cont05 .inner .info {
     width: 1440px;
     margin: 0 auto;
+    color: #fff;
 }
 
 .cont05 .inner .title {
@@ -554,6 +570,7 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
     flex-wrap: wrap;
     font-size: 20px;
     margin-bottom: 20px;
+    
 }
 
 .cont05 .info .text .list li {
@@ -565,6 +582,8 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
     margin: 5px 10px;
     font-size: 16px;
     color: #333;
+    font-family: 'Galmuri11';
+    
     
 }
 
@@ -577,17 +596,19 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
     border-radius: 40px;
     margin: 5px 10px;
     font-size: 16px;
+    transition: 0.5s;
+   
     
     
 }
 
 .cont05 .info .text .list li.v:hover {
     height: 50px;
-    line-height: 49px;
-    padding: 0 29px;
+    line-height: 50px;
+    padding: 0 30px;
     background-color: rgba(0, 0, 0, 0.761);
     color: #7DBB2C;
-    border: #7DBB2C 1px solid;
+    /* border: #7DBB2C 1px solid; */
     border-radius: 40px;
     margin: 5px 10px;
     font-size: 16px;
