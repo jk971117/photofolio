@@ -306,6 +306,9 @@ header .inner nav ul li a {
     left: 0;
 }
 
+:root {
+    --swiper-theme-color: #b0ff49;
+}
 
 
 /* .cont03 웹사이트 */
