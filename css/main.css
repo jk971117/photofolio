@@ -379,7 +379,11 @@ background: radial-gradient(circle, rgba(15,155,15,1) 0%, rgba(0,0,0,1) 94%);
     height: 100%;
     object-fit: cover;
     
+    
+    
 }
+
+
 
 .cont03 .list .item .info {
     transition: 0.5s;
